@@ -31,6 +31,16 @@ def create_dataframe_column_kmers(df, sequence_column, k):
     df['kmers'] = df[sequence_column].apply(lambda x: generate_kmers(Seq(x), k))
     return df
 st.text('Created by: Rakesh MK on 31/12/2023')
+about_button = st.button("About")
+
+# Create an expander
+with st.expander("About This App"):
+    st.write("""
+    This is a DNA sequence prediction app. 
+    It uses Multiniminal Naive Bayes algorithm  to predict gene families based on input DNA sequences.
+    
+    Feel free to explore and make predictions!
+    """)
 st.title('🧬GENOMIC Classification')
 
 sequence_pred = st.text_area("Enter a valid  DNA Sequence:", "")
