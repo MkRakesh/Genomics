@@ -5,6 +5,19 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
+background_image = """
+<style>
+[data-testid="stAppViewContainer"] > .main {
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2021/03/01/dna.-wallpaper_.jpg");
+    background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+</style>
+"""
+
+st.markdown(background_image, unsafe_allow_html=True)
+
 with open('model_0.pkl', 'rb') as model_file:
     loaded_mnb_model = pickle.load(model_file)
 
