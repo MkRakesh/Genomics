@@ -35,7 +35,7 @@ with st.expander("About"):
     st.text("With the help of an ML model trained with Multinominal Naive Bayes Algorithm, this app takes DNA sequence as input and predicts corresponding GENE FAMILY. Enter a valid DNA sequence and explore..!")
 
 
-st.title('🧬GENOMIC Classification')
+st.title('🧬GENOMIC Classifier')
 
 sequence_pred = st.text_area("Enter a valid  DNA Sequence:", "")
 st.text("(eg:ATGCCCCAACTAAATACTACCGTATGGCCCACCATAATTACCCCCATACTCCTTACACTATT....)")                            
