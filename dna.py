@@ -34,7 +34,7 @@ st.text('Created by: Rakesh MK on 31/12/2023')
 st.title('🧬GENOMIC Classification')
 
 sequence_pred = st.text_area("Enter a valid  DNA Sequence:", "")
-st.text("(eg:ATGCCCCAACTAAATACTACCGTATGGCCCACCATAATTACCCCCATACTCCTTACACTATT....")                            
+st.text("(eg:ATGCCCCAACTAAATACTACCGTATGGCCCACCATAATTACCCCCATACTCCTTACACTATT....)")                            
 
 
 
