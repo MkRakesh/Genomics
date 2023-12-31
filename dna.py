@@ -31,7 +31,7 @@ def create_dataframe_column_kmers(df, sequence_column, k):
     df['kmers'] = df[sequence_column].apply(lambda x: generate_kmers(Seq(x), k))
     return df
 st.text('Created by: Rakesh MK on 31/12/2023')
-st.help("ℹ️ Hover over me for information.")
+st.info("ℹ️ Hover over me for information.")
 
 st.title('🧬GENOMIC Classification')
 
