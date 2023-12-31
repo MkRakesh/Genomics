@@ -65,6 +65,6 @@ if st.button('Predict'):
             6: 'Transcription factor'
         }
         predictedN = [numerical_to_nucleotide[label] for label in predN]
-        st.write("Predicted gene family is:")
+        st.text("Predicted gene family is:")
         for label in predictedN:
             st.write(label)
