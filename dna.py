@@ -32,7 +32,7 @@ def create_dataframe_column_kmers(df, sequence_column, k):
     return df
 st.text('Created by: Rakesh MK on 31/12/2023')
 with st.expander("Learn More"):
-    st.write("This is additional information you want to provide.")
+    st.write("Trained with Multinominal Naive Bayes Algorithm, This app takes DNA sequence as input and predict the corresponding GENE FAMILY. Enter a valid DNA sequence and explore !")
 
 
 st.title('🧬GENOMIC Classification')
